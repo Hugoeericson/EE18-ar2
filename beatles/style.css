@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Patrick+Hand&display=swap');
+body {
+    background-image: url("./bilder/fleur-qrHBY0TQBFk-unsplash.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+h1 {
+    color: #ffffff;
+    font-size: 75px;
+    font-family: 'Amatic SC', cursive;
+
+}
+h2 {
+    color: #ffffff;
+    font-size: 40px;
+    font-family: 'Amatic SC', cursive;
+}
+p {
+    color: #ffffff;
+    font-size: 25px;
+    font-family: 'Patrick Hand', cursive;
+}
+a {
+    color: #ffffff;
+}
