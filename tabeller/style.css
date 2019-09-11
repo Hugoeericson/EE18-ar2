@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster|Teko&display=swap');
+body {
+    margin: 10px;
+}
+table {
+    width: 100%;
+    background: rgb(122, 122, 122);
+    border-spacing: 10px;
+    table-layout: fixed;
+
+}
+caption {
+    font-family: 'Lobster', cursive;
+    font-size: 60px;
+    background-image: url(./bilder/kyle-head-qfs39Foo18g-unsplash.jpg.png);
+    background-size: cover;
+    color: aliceblue;
+    background-position-y: center;
+}
+tr {}
+th {
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+    padding: 10px;
+    text-align: left;
+    color: aliceblue;
+    background: rgb(189, 189, 189);
+}
+td {
+    font-family: 'Teko', sans-serif;
+    font-size: 20px;
+    padding: 8px;
+    text-align: left;
+    color: aliceblue;
+    background: rgb(189, 189, 189);
+    padding: 25px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+img {
+    width: 200px;
+    border-radius: 5px;
+    margin-left: 25px;
+    
+}
