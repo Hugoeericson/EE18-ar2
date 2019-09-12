@@ -1,0 +1,29 @@
+body {}
+
+table {
+    width: 100%;
+    border-spacing: 1px;
+}
+
+caption {
+    background-color: rgb(255, 196, 0);
+    color: white;
+    text-align: left;
+    border: 10px solid rgb(255, 196, 0);
+    border-radius: 2.5px;
+}
+tr {   
+}
+th {
+
+}
+td {
+
+}
+img {}
+
+#dif {
+    width: 25px;
+    height: auto;
+
+}
