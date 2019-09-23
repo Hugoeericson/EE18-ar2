@@ -1,0 +1,19 @@
+body {
+    background: #F9F5F5;
+}
+table {
+    border-collapse: collapse;   
+}
+tr{
+    border: 2px solid rgb(228, 228, 228);
+}
+td{
+
+}
+th{
+
+}
+
+img{
+    width: 300px;
+}
