@@ -1,31 +1,48 @@
-body {}
-
+body {
+    background: black;
+}
 table {
-    width: 100%;
-    border-spacing: 1px;
+    font: 14px sans-serif;
+    font-weight: bold;
+    width: 1000px;
+    background: white;
+    border-collapse: collapse;
 }
-
 caption {
-    background-color: rgb(255, 196, 0);
+    background: #12326E;
     color: white;
-    text-align: left;
-    border: 10px solid rgb(255, 196, 0);
-    border-radius: 2.5px;
+    text-transform: uppercase;
+    padding: 10px;
 }
-tr {   
+thead {
+    background: #12326E;
+    color: white;
+    text-transform: uppercase;
+}
+tr {
+
 }
 th {
+    padding: 10px;
+}
+tbody {
 
 }
-td {
-
+td{
+    text-align: center;
+    padding: 5px;
 }
 img {
-    
+    width: 30px;
+    height: 30px;
 }
-
-#dif {
-    width: 25px;
-    height: auto;
-
+.ledare {
+    background: #E73088;
+    color: white;
+}
+.varannan {
+    background: rgb(226, 226, 226);
+}
+.vänster {
+    text-align: left;
 }
