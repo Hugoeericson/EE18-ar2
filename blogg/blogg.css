@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Mansalva&display=swap');
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Utseende på sidan */
+body {
+    background: #0B132B ;
+}
+.sidan {
+    font-family: 'Mansalva', cursive;
+    width: 700px;
+    background: #1C2541;
+    padding: 50px;
+    margin: 0px auto 0px auto;
+}
+
+h1 {
+    font-family: 'Mansalva', cursive;
+    font-size: 50px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+/* Utseende på inläggen */
+.inlagg {
+    background: #3A506B;
+    font-family: 'Mansalva', cursive;
+    padding: 50px;
+    margin: 15px 0 15px 0;
+    box-shadow: 10px 10px 10px #0B132B;
+    color: #FFFFFF;
+}
+img {
+    width: 100%;
+    border-radius: 15px;
+}
+h2 {
+    font-family: 'Mansalva', cursive;
+}
+.datum {
+
+}
+p {
+
+}
+
+/* Utseende på sidfoten */
+.sidfot {
+
+}
+.namn {
+    color: #FFFFFF;
+}

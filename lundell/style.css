@@ -1,0 +1,21 @@
+body {
+    background-image: url("./bilder/skane.jpg");
+    background-repeat: no-repeat;
+    background-position: center -500px;
+    background-attachment: fixed;
+    background-size:  cover;
+    text-align: left;
+    
+}
+h1 {    
+    color: #FFF;
+    font-size: 50px;
+    margin-left: 200px;
+    margin-top: 50px;
+}
+p {
+    color: #FFF;
+    font-size: 25px;
+    margin-left: 200px;
+    margin-top: 50px;
+}

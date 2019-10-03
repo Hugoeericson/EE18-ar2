@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Bowlby+One|McLaren&display=swap');
+
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #011E2C
+}
+div {
+    width: 600px;
+    background: url(./bilder/photo-1504608524841-42fe6f032b4b.jpg);
+    padding: 30px 30px 30px 300px;
+    height: 400px;
+    margin: 100px auto 0 auto;
+    border-radius: 15px;
+    box-shadow: 5px 5px 50px #000;
+}
+h1 {
+    font-family: 'Bowlby One', cursive;
+    color: white;
+    
+
+}
+h2 {
+    font-family: 'McLaren', cursive;
+    color: white;
+    
+}
+p {
+    font-family: 'McLaren', cursive;
+    color: white;
+    
+}

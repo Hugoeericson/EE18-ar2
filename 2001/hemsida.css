@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Monoton&display=swap');
+body {
+    
+    background: black url(./bilder/jorden.jpg) no-repeat fixed center bottom;
+    background-size: 400px;
+}
+h1 {
+    color:  white;
+    font: 80px 'Monoton', cursive;
+    margin: 100px auto 0 auto;
+    width: 800px;
+    text-align: center;
+    background-color: crimson;
+    border: 1px solid white;
+    padding: 30px;
+}
+h2{
+    color: white;
+    font: 30px 'Monoton', cursive;;
+    text-align: center;
+    background-color: rgb(196, 60, 87);
+    width: 800px;
+    margin: 50px auto 0 auto;
+    border: 1px solid white;
+    padding: 30px;
+}

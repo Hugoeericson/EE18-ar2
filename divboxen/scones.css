@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Arbutus|Modak&display=swap');
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Utseende på sidan */
+body {
+    background: url(./bilder/rawkkim-t_VRHRCWeLE-unsplash.jpg);
+    background-size: cover;
+}
+/* Utseende på boxen */
+div {
+    background: rgb(0, 0, 0);
+    width: 600px;
+    margin: 50px auto;
+    border-radius: 60px;
+    border-style: solid;
+    border-width: 10px;
+    color: red;
+    border: 10px solid rgb(124, 3, 3);
+    padding: 50px;
+ 
+    
+}
+/* Utseende på innehållet */
+h1 {
+    font-family: 'Arbutus', cursive;
+    margin-bottom: 20px;
+}
+p {
+    font-family: 'Arbutus', cursive;
+}
+h2 {
+    font-family: 'Arbutus', cursive;
+    margin-top: 20px;
+}
+ul {
+    list-style: none;
+}
+li {
+    font-family: 'Arbutus', cursive;
+}
+.beskrivning {
+    font-weight: bold;
+}
