@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Chango|Turret+Road&display=swap');
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS clearfix mot box-kollaps */
+.clearfix:after { 
+    content: "."; 
+    visibility: hidden; 
+    display: block; 
+    height: 0; 
+    clear: both;
+ }
+
+/* Utseende på sidan */
+body {
+    background: url(./bilder/moonbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.kontainer {
+    font-family: 'Turret Road', cursive;
+    margin: 0px auto 0px auto;
+    width: 800px;
+    padding: 50px;
+    background: rgb(94, 94, 94);
+    font-size: 20px;
+}
+h1 {
+    font-family: 'Chango', cursive;
+    text-align: center;
+    font-size: 40px;
+    padding: 40px;
+    color: white;
+}
+.intro {
+    font-size: 20px;
+    color: white;
+}
+
+/* Utseende på rutorna */
+.ruta {
+    background: black;
+    color: white;
+    padding: 50px;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+img {
+    width: 300px;
+    background: white;
+    padding: 10px;
+}
+.bildtext {
+    padding: 10px;
+}
+.vänster {
+    float: left;
+    margin-right: 20px;
+}
+.höger {
+    float: right;
+    margin-left: 20px;
+}
+.textHöger {
+    text-align: right;
+}
+hr {
+    clear: both;
+    visibility: hidden;
+}
+/* Utseende på sidfoten */
+.kalla {
+    padding: 5px;
+    color: white;
+}

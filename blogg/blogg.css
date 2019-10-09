@@ -39,24 +39,26 @@ h1 {
     box-shadow: 10px 10px 10px #0B132B;
     color: #FFFFFF;
 }
-img {
+.bild {
     width: 100%;
     border-radius: 15px;
+    padding: 10px;
+    background: #FFFFFF;
 }
 h2 {
     font-family: 'Mansalva', cursive;
+    margin-top: 15px;
 }
 .datum {
-
+    color: rgb(179, 179, 179);
 }
 p {
-
+    margin: 10px 0;
 }
 
 /* Utseende på sidfoten */
-.sidfot {
-
-}
 .namn {
     color: #FFFFFF;
+    font-style: italic;
+    font-size: 20px;
 }
