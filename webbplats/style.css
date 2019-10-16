@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Patua+One|Righteous&display=swap');
+
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Sidans färgpalett 
+$color1: rgba(0, 0, 0, 1);
+$color2: rgba(12, 24, 33, 1);
+$color3: rgba(27, 42, 65, 1);
+$color4: rgba(50, 74, 95, 1);
+$color5: rgba(204, 201, 220, 1); */ 
+
+/* Sidans Utseende */
+body {
+    background: rgba(12, 24, 33, 1);
+}
+.kontainer {
+    font-family: 'Righteous', cursive;
+    width: 900px;
+    margin: 0 auto;
+    padding: 50px;
+    background: rgba(27, 42, 65, 1);
+    color: rgb(204, 204, 204);
+}
+.kontainer h1 {
+    font: 90px 'Patua One', cursive;
+    text-align: center;
+    color: rgb(72, 104, 133);
+    text-shadow: 5px 5px 5px rgba(12, 24, 33, 1);
+}
+
+/* Menyns Utseende */
+.kontainer .meny {
+    text-align: center;
+    margin: 10px 0 30px 0;
+}
+.kontainer .meny li {
+    list-style-type: none;
+    display: inline;
+}
+.kontainer .meny a {
+    background: rgba(50, 74, 95, 1);
+    padding: 10px;
+    color: rgba(204, 201, 220, 1);
+    text-decoration: none;
+    border-radius: 3px;
+    margin: 0 3px;
+    box-shadow: 4px 4px 0 rgba(12, 24, 33, 1);
+    border-radius: 6px;
+    width: 150px;
+    display: inline-block;
+    
+}
+.kontainer .meny a:hover {
+    background: rgba(0, 0, 0, 1);
+}
+.kontainer .meny .aktiv {
+    background: rgba(12, 24, 33, 1);
+}
+
+/* Innehållets utseende */
+.kontainer h2 {
+    text-align: center;
+    text-shadow: 5px 5px 5px rgba(12, 24, 33, 1);
+    font: 40px 'Patua One', cursive;
+
+}
+.kontainer figure {
+    background: rgba(50, 74, 95, 1);
+    padding: 60px;
+    width: 500px;
+    margin: 20px auto;
+}
+.kontainer figure img {
+    width: 100%;
+}
+.kontainer figure figcaption {
+
+}
+.kontainer p {
+    background: rgba(50, 74, 95, 1);
+    padding: 20px;
+    width: 500px;
+    margin: auto;
+}
+.kontainer .sidfot{
+    font-style: italic;
+}
+.kontainer .sidfot a{
+    color: rgb(160, 160, 160);
+    text-decoration: none;
+    font-weight: bold;
+}

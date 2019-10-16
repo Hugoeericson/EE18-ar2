@@ -1,0 +1,42 @@
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+background: gray;
+margin: auto 0 auto 0;
+}
+div{
+    background: rgb(163, 163, 163);
+}
+h1 {
+    color: white;
+    font-size: 50px;
+}
+h2{
+    color: white;
+    font-size: 30px;
+    
+}
+a{
+    color: aqua
+}
+img{
+    width: 200px;
+    margin: 50px;
+}
+.clearfix:after { 
+    content: "."; 
+    visibility: hidden; 
+    display: block; 
+    height: 0; 
+    clear: both;
+ }
