@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Patua+One|Righteous&display=swap');
+
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+/* Sidans Utseende */
+body {
+    background: url(./bilder/tumblr_pekigyrw3n1tu58kso2_250.png);
+}
+.kontainer {
+    font-family: 'Righteous', cursive;  
+    margin: 0 auto;
+    padding: 50px;
+    color: rgb(204, 204, 204);
+}
+.kontainer h1 {
+    font: 60px 'Patua One', cursive;
+    text-align: left;
+    color: #FCA311;
+    background: rgb(61, 61, 61);
+    width: 400px;
+    border-radius: 25px;
+    padding: 0 0 0 10px;
+}
+
+/* Menyns Utseende */
+.kontainer .meny {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    border-radius: 30px;
+    display: grid;
+}
+.kontainer .meny li {
+    list-style-type: none;
+    display: inline;    
+    padding: 20px;
+}
+.kontainer .meny li:hover {  
+    background: rgb(204, 204, 204);
+    border-radius: 30px;
+    
+}
+.kontainer .meny a {    
+    color: #FCA311;
+    text-decoration: none;  
+}
+.kontainer .meny ul {
+    margin-top: 30px;
+    font-size: 16px;
+}
+.kontainer .meny a:hover { 
+    color: rgb(255, 255, 255);
+}
+.kontainer .meny .aktiv {
+    background: rgb(61, 61, 61);
+    border-radius: 30px;
+}
+
+/* Innehållets utseende */
+.kontainer h2 {
+    text-shadow: 5px 5px 5px rgba(12, 24, 33, 1);
+    font: 50px 'Patua One', cursive;
+    color: rgb(204, 204, 204);
+    margin-top: 70px;   
+}
+.kontainer h3 {
+    text-shadow: 5px 5px 5px rgba(12, 24, 33, 1);
+    font: 30px 'Patua One', cursive;
+    color: #FCA311;
+    margin-top: 30px;
+}
+.kontainer p {
+    margin-top: 10px;
+    width: 1000px;
+    font-size: 25px;
+    color: rgb(204, 204, 204);
+}
+.kontainer .kallor{
+    font-style: italic;
+    margin-top: 30px;
+    color: #FCA311; 
+}
+.kontainer .kallor a{
+    color: rgb(204, 204, 204);
+    text-decoration: none;
+    font-weight: bold;
+
+}
+.kontainer .icon{
+    width: 12%;
+
+/* Hover */
+}
+.kontainer .text1 p:hover {
+    color: white;
+    background: rgb(109, 105, 100);
+    border-radius: 10px;
+    font-size: 27px;
+}
+.kontainer .text2 p:hover {
+    color: white;
+    background: rgb(109, 105, 100);
+    border-radius: 10px;
+    font-size: 27px;
+}
+.kontainer h3:hover {
+    color: rgb(223, 143, 15);
+}
+.kontainer .kallor:hover {
+    background: rgb(255, 255, 255);
+    width: 270px;
+    border-radius: 20px;
+    padding: 0 0 0 5px;
+}

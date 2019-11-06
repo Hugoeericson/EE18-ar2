@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Patua+One|Righteous&display=swap');
+
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Sidands Utseende */
+body {
+    background: url(./bilder/sn333g150900049.jpg);
+}
+.kontainer {
+    font-family: 'Righteous', cursive;  
+    margin: 0 auto;
+    padding: 50px;
+    color: rgb(204, 204, 204);
+}
+.kontainer h1 {
+    font: 50px 'Patua One', cursive;
+    text-align: left;
+    color: #FCA311;
+    width: 600px;
+    padding: 0 0 0 10px;
+    background: #403D39;
+    border-radius: 30px;
+}
+/* Menyns Utseende */
+.kontainer .meny {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    border-radius: 30px;
+    display: grid;
+}
+.kontainer .meny li {
+    list-style-type: none;
+    display: inline;    
+    padding: 20px;
+    background: #403D39;
+    border-radius: 30px;
+    
+}
+
+.kontainer .meny a {    
+    color: #FCA311;
+    text-decoration: none;  
+}
+.kontainer .meny ul {
+    margin-top: 30px;
+    font-size: 16px;
+    
+}
+.kontainer .meny a:hover {
+    color: rgb(255, 255, 255);
+}
+.kontainer .meny .aktiv {
+    background: rgb(61, 61, 61);
+    border-radius: 30px;
+}
+
+/* Innehållets utseende */
+.kontainer .rutor{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-top: 100px;
+}
+.kontainer .rutor .produkter {
+    background: #403D39;
+    width: 290px;
+    padding: 25px;
+    margin: 0 auto 20px auto;
+    border-radius: 20px;
+    height: 500px;
+}
+.kontainer .rutor .produkter li {
+    list-style-type: none;
+    color: #FCA311;
+    margin-top: 10px;
+}
+.kontainer .rutor .produkter a{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+.kontainer .rutor .produkter img{
+    width: 240px;
+    border-radius: 5px;
+}
+/* Hover */
+.kontainer .meny li:hover {  
+    background: rgb(204, 204, 204);
+    border-radius: 30px;
+    
+}
+.kontainer .kop:hover {
+    font-size: 20px;
+}
+.kontainer .rutor .produkter li:hover {
+    color: white;
+    width: 250px;
+}
+.kontainer .rutor .produkter img:hover {
+    width: 250px;
+}
+.kontainer .rutor .produkter a:hover{
+    color: rgb(45, 131, 66);
+    font-size: 20px;
+}
