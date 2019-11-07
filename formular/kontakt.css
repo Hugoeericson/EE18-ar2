@@ -1,0 +1,50 @@
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: rgb(202, 202, 202);
+    background: rgb(188, 225, 235);
+}
+
+.kontainer{
+    width: 800px;
+    margin: 20px auto;
+    padding: 50px;
+}
+
+.kontainer form{
+    background: rgb(197, 197, 197);
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-gap: 10px;
+}
+
+input, select, textarea{
+    padding: 5px;
+    background: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+button {
+    padding: 10px;
+    background: rgb(131, 204, 247);
+    border: 3px solid rgb(90, 222, 245);
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 10px 0;
+    cursor: pointer;
+}

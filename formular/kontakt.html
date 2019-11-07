@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kontaktformulär</title>
+    <link rel="stylesheet" href="./kontakt.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Kontakta</h1>
+        <form action="kontakt.php" method="POST">
+            <label for="fnamn">Förnamn</label>
+            <input id="fnamn" type="text" name="fnamn" placeholder="Tex Anders" required>
+
+            <label for="enamn">Efternamn</label>
+            <input id="enamn" type="text" name="enamm" placeholder="Andersson" required>
+
+            <label for="gadress">Gatuadress</label>
+            <input id="gadress" type="text" name="gadress" placeholder="Tex tessinvägen" required>
+
+            <label for="postnr">postnr</label>
+            <input id="postnr" type="text" name="postnr" placeholder="Tex 12345" required>
+
+            <label for="postadress">Postadress</label>
+            <input id="postadress" type="text" name="padress" placeholder="Tex Stockholm" required>
+
+            <label for="epost">Epost adress</label>
+            <input id="epost" type="email" name="epost" placeholder="Tex ander@hotmail.com" required>
+
+            <label for="mobil">Mobil</label>
+            <input id="mobil" type="tel" name="nr" placeholder="Tex 070 02020" required pattern="07[0-9]{8}">
+
+            <label>Kön</label>
+            <div class="kon">
+                <label for="man"><input type="radio" id="man" name="kon" required checked> Man</label>
+                <label for="kvinna"><input type="radio" id="kvinna" name="kon" required> Kvinna</label>
+                <label for="annat"><input type="radio" id="annat" name="kon" required> Annat</label>
+            </div>
+
+            <label>Kön</label>
+            <div class="kon">
+                <label for="gluten"><input type="checkbox" id="gluten" name="kon"> Gluten</label>
+                <label for="laktos"><input type="checkbox" id="laktos" name="kon"> Laktos</label>
+                <label for="nötter"><input type="checkbox" id="nötter" name="kon"> Nötter</label>
+            </div>
+
+            <label for="hkommun">Hemkommun</label>
+            <select id="hkommun" name="hkommun">
+                <option value="Stockholm">Stockholm</option>
+                <option value="Nacka" selected>Nacka</option>
+                <option value="Värmdö">Värmdö</option>
+                <option value="Huddinge">Huddinge</option>
+                <option value="Kista">Kista</option>
+                <option value="Annan Kommun">Annan Kommun</option>
+            </select>
+
+            <label for="kommentar">Kommentar</label>
+            <textarea id="kommentar" name="kommentar">Skriv din kommentar här...</textarea>
+
+            <button>Skicka</button>
+        </form>
+    </div>
+</body>
+</html>
