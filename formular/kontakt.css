@@ -11,7 +11,6 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
 }
 
 body{
-    background: rgb(202, 202, 202);
     background: rgb(188, 225, 235);
 }
 
@@ -39,9 +38,9 @@ input, select, textarea{
 
 button {
     padding: 10px;
-    background: rgb(131, 204, 247);
-    border: 3px solid rgb(90, 222, 245);
-    color: black;
+    background: rgb(158, 158, 158);
+    border: 3px solid rgb(77, 84, 85);
+    color: rgb(0, 0, 0);
     font-size: 15px;
     font-weight: bold;
     border-radius: 5px;
