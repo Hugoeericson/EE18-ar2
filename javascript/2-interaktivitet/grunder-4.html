@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Animera element på sidan</title>
+    <script src="//cdn.rawgit.com/gibbok/animatelo/1.0.3/dist/animatelo.min.js"></script>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body onclick="prova()">
+    <div class="kontainer">
+        <h1>I rörelse</h1>
+        <p>Den mätta dagen, den är aldrig störst.<br>
+            Den bästa dagen är en dag av törst.</p>
+
+        <p>Nog finns det mål och mening i vår färd - <br>
+            men det är vägen, som är mödan värd.</p>
+
+        <p>Det bästa målet är en nattlång rast,<br>
+            där elden tänds och brödet bryts i hast.</p>
+
+        <p>På ställen, där man sover blott en gång,<br>
+            blir sömnen trygg och drömmen full av sång.</p>
+
+        <p>Bryt upp, bryt upp! Den nya dagen gryr.<br>
+            Oändligt är vårt stora äventyr.</p>
+
+        <img src="../bilder/fire.jpg" alt="En eld">
+
+        <button onclick="jellorubrik()">Jello på rubriken</button>
+        <button onclick="bounceOutDownText()">text</button>
+        <button onclick="hingeimg()">img</button>
+        <button onclick="hingediv()">div</button>
+    </div>
+    <script>
+        function jellorubrik() {
+            window.animatelo.flash("h1");
+        }
+        function bounceOutDownText() {
+            window.animatelo.bounceOutDown("p");
+        }
+        function hingeimg() {
+            window.animatelo.hinge("img");
+        }
+        function hingediv() {
+            window.animatelo.hinge(".kontainer");
+        }
+        function prova() {
+            window.animatelo.flash("body");
+            
+        }
+    </script>
+</body>
+</html>

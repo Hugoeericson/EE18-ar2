@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Arbeta med DOM</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>I rörelse</h1>
+        <p>Den mätta dagen, den är aldrig störst.<br>
+            Den bästa dagen är en dag av törst.</p>
+
+        <p>Nog finns det mål och mening i vår färd - <br>
+            men det är vägen, som är mödan värd.</p>
+
+        <p>Det bästa målet är en nattlång rast,<br>
+            där elden tänds och brödet bryts i hast.</p>
+
+        <p>På ställen, där man sover blott en gång,<br>
+            blir sömnen trygg och drömmen full av sång.</p>
+
+        <p>Bryt upp, bryt upp! Den nya dagen gryr.<br>
+            Oändligt är vårt stora äventyr.</p>
+
+        <img src="../bilder/fire.jpg" alt="En eld">
+
+        <button onclick="mörkt()">Mörkt läge</button>
+        <button onclick="radera()">Nukem!</button>
+    </div>
+    <script>
+        function mörkt() {
+            document.body.style.backgroundColor = "black";
+            document.body.style.color = "purple";
+            document.title = "Mörkt läge";
+        }
+        function radera() {
+            document.body.innerHTML = '<img src="../bilder/fire.jpg" alt="En eld">';
+        }
+    </script>
+</body>
+</html>

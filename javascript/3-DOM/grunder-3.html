@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Arbeta med DOM</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>I rörelse</h1>
+        <p id="p1">Den mätta dagen, den är aldrig störst.<br>
+            Den bästa dagen är en dag av törst.</p>
+
+        <p id="p2">Nog finns det mål och mening i vår färd - <br>
+            men det är vägen, som är mödan värd.</p>
+
+        <img src="../bilder/fire.jpg" alt="En eld">
+
+        <button id="b1" onclick="mörkt()">Mörkt läge</button>
+        <button id="b2" onclick="ljust()">Ljust läge</button>
+    </div>
+    <script>
+        function mörkt() {
+            const elementBox = document.querySelector(".kontainer");
+            const elementH1 = document.querySelector("h1");
+            const elementP1 = document.querySelector("#p1");
+            const elementP2 = document.querySelector("#p2");
+            const elementKnapp1 = document.querySelector("#b1");
+            const elementKnapp2 = document.querySelector("#b2");
+            const elementImg = document.querySelector("img");
+
+            document.body.style.backgroundColor = "black";
+            document.title = "Mörkt läge";
+            elementBox.style.backgroundColor = "grey";
+            elementH1.style.color = "white";
+
+            elementP1.style.color = "white";
+            elementP1.style.backgroundColor = "grey";
+
+            elementP2.style.color = "white";
+            elementP2.style.backgroundColor = "grey";
+
+            elementKnapp1.style.color = "white";
+            elementKnapp1.style.backgroundColor = "black";
+
+            elementKnapp2.style.color = "white";
+            elementKnapp2.style.backgroundColor = "black";
+
+            elementImg.style.backgroundColor = "grey";
+        }
+        function ljust() {
+            const elementBox = document.querySelector(".kontainer");
+            const elementH1 = document.querySelector("h1");
+            const elementP1 = document.querySelector("#p1");
+            const elementP2 = document.querySelector("#p2");
+            const elementKnapp1 = document.querySelector("#b1");
+            const elementKnapp2 = document.querySelector("#b2");
+            const elementImg = document.querySelector("img");
+
+            document.body.style.backgroundColor = "#F9F6EB";
+            document.title = "Ljust läge";
+            elementBox.style.backgroundColor = "white";
+
+            elementH1.style.color = "black";
+
+            elementP1.style.color = "black";
+            elementP1.style.backgroundColor = "white";
+
+            elementP2.style.color = "black";
+            elementP2.style.backgroundColor = "white";
+
+            elementKnapp1.style.color = "black";
+            elementKnapp1.style.backgroundColor = "red";
+
+            elementKnapp2.style.color = "black";
+            elementKnapp2.style.backgroundColor = "red";
+
+            elementImg.style.backgroundColor = "white";
+            elementImg.style.borderRadius = "15px";
+        }
+    </script>
+</body>
+</html>
