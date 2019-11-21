@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Arbeta med DOM</title>
+    <script src="//cdn.rawgit.com/gibbok/animatelo/1.0.3/dist/animatelo.min.js"></script>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <div class="kontainer mörk">
+        <h1 hidden>Mera Brännvin</h1>
+        <p id="p1" hidden>
+            Börje: de e gött å supa pojkar<br>
+            Börje: skål då pojkar<br>
+            Börje: jaa å så tar man sej en kalas....<br>
+            Börje: hö hö hö<br>
+            Börje: va e de fö?<br>
+            Torsten Bengtsson: öö pojkar, har ni lite brännivn till mej me?<br>
+            Börje: vi har jävlar inge brännvin till dej<br>
+            Torsten: men en liten jävel?<br>
+            Börje: du ska få en stor jävel, gratis!<br>
+            SMACK
+            Torsten: Aaalvesta
+            Smack<br>
+            Börje: de va ena klockrene träff där Börje, va va de för en?<br>
+            Börje: ja de va Torsten Bengtsson<br>
+            Börje: va de han? ja, då kan vi sätta igång å supa på allvar pojkar<br>
+        </p>
+
+        <p id="p2" hidden>
+            De e ett jävla tjatande om alkohol, som säger att de e nåt som vi <br>inte tål<br>
+            Men brännvin de nyttigt som själve fan, jajemen<br>
+            Å om våran lever slutar att fungera<br>
+            Åker vi till USA å får den opererad, ja<br>
+        </p>
+
+        <p id="p3" hidden>
+            Mera Brännvin, Mera Brännvin, Mera Brännvin, Mera Brännvin<br>
+            Mera Brännvin, bara så, Mera Brännvin, Mera Brännvin, Mera Brännvin<br>
+            Mera Brännvin, Mera Brännvin, Mera Brännvin, Mera Brännvin<br>
+            Om vi svimmar någonstans får vi gratis ambulans får vi gratis <br>ambulans<br>
+            Mera Brännvin, Mera Brännvin<br>
+        </p>
+        <button onclick="visaText()">Tryck på egen risk!</button>
+        <button onclick="taBortAllt()">Tryck inte på mig!</button>
+    </div>
+
+    <script>
+        function visaText() {
+            /* Hitta element jag jobbar på */
+            const elementRubrik = document.querySelector("h1");
+            const elementP1 = document.querySelector("#p1");
+            const elementP2 = document.querySelector("#p2");
+            const elementP3 = document.querySelector("#p3");
+
+            /* Göra texten synlig igen */
+            elementRubrik.hidden = false;
+            elementP1.hidden = false;
+            elementP2.hidden = false;
+            elementP3.hidden = false;
+
+            window.animatelo.zoomIn("h1");
+            window.animatelo.zoomIn("p");
+        }
+        function taBortAllt() {
+            const elementbody = document.querySelector("body");
+
+            elementbody.hidden = true;
+            
+            window.animatelo.rollOut("body");
+            
+        }
+    </script>
+</body>
+</html>

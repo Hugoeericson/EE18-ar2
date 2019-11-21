@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Arbeta med DOM</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <div class="kontainer mörk">
+        <h1>I rörelse</h1>
+        <p id="p1" class="mörk">Den mätta dagen, den är aldrig störst.<br>
+            Den bästa dagen är en dag av törst.</p>
+
+        <p id="p2" class="mörk">Nog finns det mål och mening i vår färd - <br>
+            men det är vägen, som är mödan värd.</p>
+
+        <img src="../bilder/fire.jpg" alt="En eld">
+
+        <button id="b1" onclick="mörkt()">Mörkt läge</button>
+        <button id="b2" onclick="ljust()">Ljust läge</button>
+    </div>
+    <script>
+        function mörkt() {
+            const elementBox = document.querySelector(".kontainer");
+            const elementH1 = document.querySelector("h1");
+            const elementP1 = document.querySelector("#p1");
+            const elementP2 = document.querySelector("#p2");
+            const elementKnapp1 = document.querySelector("#b1");
+            const elementKnapp2 = document.querySelector("#b2");
+            const elementImg = document.querySelector("img");
+
+            document.title = "Mörkt läge";
+            elementBox.classList.toggle("mörk");
+            
+        }    
+    </script>
+</body>
+</html>
