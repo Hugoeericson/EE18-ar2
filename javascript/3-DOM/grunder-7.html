@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Arbeta med DOM</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Åldersgränser</h1>
+        <i id="pil16" onclick="visaText16()" class="fa fa-arrow-circle-right">16år</i> 
+        <p id="text16" class="animated dold">
+            Skolplikten upphör när du gått ut nionde klass.<br>
+            Du får ta ett normalt, riskfritt arbete, det vill säga jobba 40 <br>timmar i veckan. Men arbetsgivaren har lite mer ansvar för dig som <br>inte är myndig än för dina myndiga arbetskamrater.<br>
+            Du får starta egen firma.<br>
+            Du får själv bestämma över de pengar du tjänar.<br>
+            Du får ta körkort för lätt motorcykel och traktor.<br>
+            Du får börja övningsköra bil.<br>
+            Du får anmäla flyttning och skriva under din anmälan själv.<br>
+            Dina föräldrar får inte längre barnbidrag för dig. Nu får du <br>istället studiebidrag om du studerar.
+        </p>
+        <i id="pil18" onclick="visaText18()" class="fa fa-arrow-circle-right">18år</i> 
+        <p id="text18" class="animated dold">
+            Du blir myndig.<br>
+            Du får gifta dig.<br>
+            Du får rösta.<br>
+            Du får köpa cigaretter.<br>
+            Du får köpa alkohol på restaurang och öl i affärer.<br>
+            Du får ta körkort.<br>
+            Enligt lagen slutar dina föräldrars underhållsskyldighet när du <br>fyllt 18 år. Det betyder att de inte är skyldiga att försörja dig <br>längre. Men om du fortfarande går i skolan fortsätter föräldrarnas <br>underhållsskyldighet. De ska i så fall försörja dig så länge du går<br>på gymnasiet eller tills du fyller 21 år.
+        </p>
+    </div>
+    <script>
+        /* element vi skall arbeta med */
+        const elementText16 = document.querySelector("#text16");
+        const elementText18 = document.querySelector("#text18");
+        
+        const elementPil16 = document.querySelector("#pil16");
+        const elementPil18 = document.querySelector("#pil18");
+
+        function visaText16() {
+            elementText16.classList.add("zoomIn");
+            elementText16.classList.toggle("dold");
+
+            elementPil16.classList.toggle("fa-arrow-circle-right");
+            elementPil16.classList.toggle("fa-arrow-circle-down");
+        }
+
+        function visaText18() {
+            elementText18.classList.add("zoomIn");
+            elementText18.classList.toggle("dold");
+
+            elementPil18.classList.toggle("fa-arrow-circle-right");
+            elementPil18.classList.toggle("fa-arrow-circle-down");
+
+        }
+    </script>
+</body>
+</html>
