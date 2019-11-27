@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Arbeta med DOM</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <div class="kontainer kol3">
+        <img id="bild1" src="./foton/photo-1504810787266-10a22e47e5b7.jpg" alt="motorcykel">
+        <img id="bild2" src="./foton/photo-1509529711801-deac231925ac.jpg" alt="berg">
+        <img id="bild3" src="./foton/photo-1574841464754-62e0e151584b.jpg" alt="vägar">
+
+        <button onclick="blink1()">Starta blink</button>
+        <button onclick="skugga()">skugga</button>
+        <button onclick="sepia()">sepia</button>
+    </div>
+    <script>
+        /* element vi skall arbeta med */
+        const elementBild1 = document.querySelector("#bild1");
+        const elementBild2 = document.querySelector("#bild2");
+        const elementBild3 = document.querySelector("#bild3");
+
+
+        function blink1() {
+            setInterval(svartVitt, 500);
+        }
+        function svartVitt() {
+            elementBild1.classList.toggle("gråskala");
+        }
+
+        function skugga() {
+            elementBild2.classList.toggle("skuggor");
+        }
+        
+        function sepia() {
+            elementBild3.classList.toggle("sepiat");
+        }
+
+        function timerSvartVitt() {
+            
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Arbeta med DOM</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <img id="bild1" src="./foton/photo-1504810787266-10a22e47e5b7.jpg" alt="motorcykel">
+    </div>
+    <script>
+        const elementFoto = document.querySelector("#bild1");
+
+        setInterval(flasha, 1000);
+
+        function flasha() {
+            elementFoto.classList.toggle("sepiat");
+        }
+    </script>
+</body>
+</html>
