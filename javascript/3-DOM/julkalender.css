@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Yellowtail&display=swap');
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Styla kalendern */
+
+body {
+    background: url(./foton/jul.jpg);
+}
+.kontainer {
+    background: rgb(97, 4, 4);
+    width: 800px;
+    margin: auto;
+    font-family: 'Yellowtail', cursive;
+    color: white;
+    text-align: center;
+}
+h1 {
+    font-size: 80px;
+}
+.kalender {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 15px;
+    padding: 50px;
+    justify-content: space-around;
+
+}
+.ruta {
+    font-size: 30px;
+    background: #B27C1A;
+    width: 80px;
+    height: 80px;
+    padding: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+.ruta:hover {
+    background: rgb(214, 151, 33);
+    box-shadow: 0 0 10px white;
+}
+.klapp1 {
+    font-size: 0;
+    background: url(./foton/Bronze-Box.gif);
+    background-size: 80px 80px;
+    animation: tona 5s;
+    pointer-events: none;
+}
+@keyframes tona {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.h1knapp {
+    font-size: 0;
+    background: url(./foton/Bronze-Box.gif);
+    background-size: 80px 80px;
+    animation: tona 5s;
+    pointer-events: none;
+}

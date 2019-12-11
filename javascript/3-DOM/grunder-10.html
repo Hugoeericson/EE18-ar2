@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Arbeta med DOM</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Infoga text i sidan</h1>
+        <p class="p1">Hemligt mobilnr</p>
+        <p class="p2">Hemligt adress</p>
+        <div id="avatar">Hemlig avatarbild</div>
+        <button onmousedown="visaNr()" onmouseup="döljnr()">Visa mobilnr</button>
+        <button onmousedown="visaAdress()" onmouseup="döljadress()">Visa hemlig adress</button>
+        <button onclick="visaBild()">Visa avatarbilden</button>
+    </div>
+    <script>
+        /* element vi skall arbeta med */
+        const elementP1 = document.querySelector(".p1");
+        const elementP2 = document.querySelector(".p2");
+        const elementAvatar = document.querySelector("#avatar");
+
+        function visaMobilnr() {
+            /* infoga mobilnr i p-elementet */
+            elementP1.textContent = "0707706465";
+        }
+
+        function visaNr() {
+            elementP1.textContent = "0707706465";
+        }
+        function döljnr() {
+            elementP1.textContent = "Hemligt mobilnr";
+        }
+        function visaAdress() {
+            elementP2.textContent = "stockholm vägen 13455";
+        }
+        function döljadress() {
+            elementP2.textContent = "Hemlig adress";
+        }
+        function visaBild() {
+            elementAvatar.innerHTML = "<img src=\"./foton/male-icon-vector-26.jpg\" alt=\"gubbe\">"; 
+        }
+    </script>
+</body>
+</html>

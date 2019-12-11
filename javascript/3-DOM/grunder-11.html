@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Arbeta med DOM</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1 onclick="visaTitel()">Klicka på mig!</h1>
+        <p onclick="visaVers()">Klicka på mig också!</p>
+    </div>
+    <script>
+        /* element vi skall arbeta med */
+        const elementH1 = document.querySelector("h1");
+        const elementP = document.querySelector("p");
+
+        function visaTitel() {
+            elementH1.textContent = "Sankta lucia";
+        }
+        function visaVers() {
+            elementP.innerHTML =  "Natten går tunga fjät,<br>" +
+                                    "runt gård och stuva.<br>" +
+                                    "Kring jord som sol’n förlät, <br>" +
+                                    "skuggorna ruva.<br>" + 
+                                    "Då i vårt mörka hus,<br>" + 
+                                    "stiger med tända ljus,<br>" +
+                                    "Sankta Lucia, Sankta Lucia." +
+                                    "<iframe widthä560\" height=\"315\" src=\"https://www.youtube.com/embed/wcCnso0PcAs\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>";
+        }
+    </script>
+</body>
+</html>

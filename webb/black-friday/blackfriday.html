@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Black Friday</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="./blackfriday.css">
+</head>
+<body>
+    <div class="kontainer">
+        <img class="dold" src="./bilder/Skärmklipp.PNG" alt="mina-beats">
+        <h1 class="dold">Prod. Hugo Beats</h1>
+        <p class="dold">Just nu Black Friday</p>
+    </div>
+    <script>
+        const elementH1 = document.querySelector("h1");
+        const elementImg = document.querySelector("img");
+        const elementP = document.querySelector("p");
+
+        /* Fördröjning */
+        setTimeout(visaReklam, 2000);
+
+        function visaReklam() {
+            elementH1.classList.remove("dold");
+            elementImg.classList.remove("dold");
+            elementP.classList.remove("dold");
+        }
+        const element =  document.querySelector('.kontainer')
+        element.classList.add('animated', 'bounceInLeft')
+        function bouceout() {
+            
+        }
+    </script>
+</body>
+</html>

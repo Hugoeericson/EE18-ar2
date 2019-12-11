@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <img class="dold" src="./foton/photo-1504810787266-10a22e47e5b7.jpg" alt="motorcykel">
+    </div>
+    <script>
+        /* Element vi arbetar med  */
+        const elementImg = document.querySelector("img");
+
+        /* Fördröjning */
+        setTimeout(visaBild, 2000);
+
+        function visaBild() {
+            elementImg.classList.remove("dold");
+        }
+    </script>
+</body>
+</html>
