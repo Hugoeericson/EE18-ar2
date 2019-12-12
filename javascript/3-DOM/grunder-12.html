@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Arbeta med DOM</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <button onclick="visaGif()">Klicka på mig!</button>
+    </div>
+    <script>
+        /* element vi skall arbeta med */
+        const elementGif = document.querySelector("div");
+
+        function visaGif() {
+            elementGif.innerHTML = "<h1>snurr!</h1>" +
+                "<img src=\"./foton/giphy.gif\" alt=\"hej\">";
+        }
+    </script>
+</body>
+</html>

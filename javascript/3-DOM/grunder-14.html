@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Arbeta med DOM</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Läsa av input-rutor</h1>
+
+        <h2>Input</h2>
+        <label>Förnamn</label>
+        <input id="förnamn" type="text">
+        <label>Efternamn</label>
+        <input id="efternamn" type="text">
+        <button onclick="läsaNamn()">Skicka</button>
+
+        <h2>Output</h2>
+        <p>Resultat</p>
+    </div>
+    <script>
+        /* element vi skall arbeta med */
+        const elementRuta1 = document.querySelector("#förnamn");
+        const elementRuta2 = document.querySelector("#efternamn");
+        const elementResultat = document.querySelector("p");
+
+        /* När vi klickar på knappen */
+        function läsaNamn() {
+            /* Läsa av input-rutan */
+            var förnamn = elementRuta1.value;
+            var efternamn = elementRuta2.value;
+
+            /* Skriva in i p */
+            elementResultat.textContent = "Ditt namn är: " + förnamn + " " + efternamn;
+        }
+    </script>
+</body>
+</html>
