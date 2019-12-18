@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Arbeta med DOM</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Spamskydd</h1>
+
+        <h2>Input</h2>
+        <label>...</label>
+        <input type="text">
+        <button onclick="gissa()">Skicka</button>
+
+        <h2>Output</h2>
+        <p>Resultat</p>
+    </div>
+    <script>
+        /* element vi skall arbeta med */
+        const elementInput = document.querySelector("input");
+        const elementResultat = document.querySelector("p");
+        const elementLabel = document.querySelector("label");
+
+        var tal1 = Math.ceil(Math.random() * 10);
+        var tal2 = Math.ceil(Math.random() * 10);
+
+        var summa = tal1 + tal2;
+
+        elementLabel.textContent = "vad är " + tal1 + "+" + tal2 + "?";
+
+        function gissa() {
+            /* Läs av gissning */
+            var gissning = elementInput.value;
+
+            if (gissning == summa) {
+                elementResultat.textContent = "rätt svar";
+            } else {
+                elementResultat.textContent = "fel svar";
+            }
+        }
+    </script>
+</body>
+</html>
