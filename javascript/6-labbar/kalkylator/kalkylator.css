@@ -1,0 +1,23 @@
+body {
+    background: rgb(96, 196, 214);
+}
+.kontainer {
+    width: 500px;
+    padding: 2em;
+    margin: 3em auto;
+    background: #fff;
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 12px #f0e9d1;
+}
+
+.kol4 {
+    margin: 1em auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1em;
+}
+.bredd3 {
+    grid-column: span 3;
+}

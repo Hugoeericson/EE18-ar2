@@ -1,0 +1,39 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    margin-top: 3em;
+    font-size: 3em;
+}
+
+h3 {
+    font-size: 2.4em;
+    margin-top: 1em;
+}
+
+body {
+    background: #9DB5A4;
+    color: #4F6D5A;
+    /* margin-left: 45em; */
+    float: right;
+}
+.container ul {
+    margin-top: 1em;
+}
+
+.container ul li {
+    list-style-type: none;
+    font-size: 2em;
+    margin-top: 0.3em;
+}
+
+.container .price {
+    margin-bottom: 1em;
+}
