@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Canvas</title>
+    <link rel="stylesheet" href="./pikachu.css">
+</head>
+<body>
+    <canvas></canvas>
+    <script>
+        /* ****************************** */
+        /*        Ställ in canvas         */
+        /* ****************************** */
+        const eCanvas = document.querySelector("canvas");
+        eCanvas.width = 1200;
+        eCanvas.height = 1000;
+        var ctx = eCanvas.getContext("2d");
+
+        /* ****************************** */
+        /*    Variabler och objekt        */
+        /* ****************************** */
+        var figurX = Math.random() * 1200;
+        var figurY = 0;
+
+        var jelly = {
+            x: Math.random() * 1200,
+            y: 0,
+            bild: new Image()
+        }
+        var darthvader = {
+            x: Math.random() * 1200,
+            y: 0,
+            bild: new Image()
+        }
+        var groot = {
+            x: Math.random() * 1200,
+            y: 0,
+            bild: new Image()
+        }
+
+        jelly.bild.src = "./iconer/icons8-jelly-band-50.png";
+        darthvader.bild.src = "./iconer/icons8-darth-vader-50.png";
+        groot.bild.src = "./iconer/icons8-groot-50.png";
+
+        /* ****************************** */
+        /*            Funktioner          */
+        /* ****************************** */
+        function ritaFigur(x, y) {
+            ctx.fillStyle = "pink";
+            ctx.fillRect(x, y, 50, 50);
+        }
+
+        function ritajelly() {
+            ctx.drawImage(jelly.bild, jelly.x, jelly.y);
+        }
+        function ritadarthvader() {
+            ctx.drawImage(darthvader.bild, darthvader.x, darthvader.y);
+        }
+        function ritagroot() {
+            ctx.drawImage(groot.bild, groot.x, groot.y);
+        }
+
+        /* Animationsloopen */
+        function loopen() {
+            ctx.clearRect(0, 0, 1200, 1000);
+
+            jelly.y += 5;
+            ritajelly();
+
+            darthvader.y += 5;
+            ritadarthvader();
+
+            groot.y += 5;
+            ritagroot();
+
+            requestAnimationFrame(loopen);
+        }
+
+        /* ****************************** */
+        /*     Starta animationsloopen    */
+        /* ****************************** */
+        loopen();
+    </script>
+</body>
+</html>

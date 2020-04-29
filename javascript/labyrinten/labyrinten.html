@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Labyrinten</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./labyrinten.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Labyrinten</h1>
+        <h3>Input</h3>
+        <div class="grid">
+            <label>Vad heter du?</label>
+            <input class="form-control" id="namn" type="text">
+            <label>Vad vill du göra?</label>
+            <input class="form-control" id="verb" type="text">
+
+            <br><button class="btn btn-success">Skicka</button>
+        </div>
+
+        <h3>Output</h3>
+        <p>Du har <span id="poäng"></span></p>
+        <p id="output"></p>
+
+        <script defer src="./labyrinten.js"></script>
+    </div>
+</body>
+</html>

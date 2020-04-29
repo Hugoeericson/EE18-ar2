@@ -1,0 +1,31 @@
+body {
+    background: #b6b9c2 url("https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6");
+    background-size: cover;
+    font-family: sans-serif;
+}
+.kontainer {
+    width: 600px;
+    margin: 100px auto;
+    padding: 30px;
+    background-color: #d9f1c5f3;
+    border-radius: 5px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+}
+label {
+    width: 250px;
+    display: inline-block;
+    margin: 10px 0;
+    text-align: right;
+}
+p {
+    background: #FFF;
+    padding: 20px;
+    border-radius: 3px;
+}
+p#fel {
+    background: #ffd7d7;
+}

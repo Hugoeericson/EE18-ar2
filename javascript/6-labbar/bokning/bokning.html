@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hotellbokning</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./bokning.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Rumsbokning</h1>
+        <fieldset>
+            <legend>Val av rum</legend>
+            <input type="radio" name="rum" id="erum" checked value="500">
+            <label for="erum">Enkelrum 500 kr</label><br>
+            <input type="radio" name="rum" id="drum" value="850">
+            <label for="drum">Dubbelrum 850 kr</label><br>
+            <input type="radio" name="rum" id="frum" value="1050">
+            <label for="frum">Familjerum 1050 kr</label><br>
+        </fieldset>
+        <fieldset>
+            <legend>Antal nätter</legend>
+            <select class="form-control form-control-sm">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">1 vecka</option>
+                <option value="14">2 veckor</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Extra tillägg</legend>
+            <input type="checkbox" name="tillägg" id="wifi" value="20">
+            <label for="wifi">Eget wifi 20 kr</label><br>
+            <input type="checkbox" name="tillägg" id="tyst" value="200">
+            <label for="tyst">Tyst rum 200 kr</label><br>
+            <input type="checkbox" name="tillägg" id="tv" value="100">
+            <label for="tv">Större tv 100 kr</label><br>
+            <input type="checkbox" name="tillägg" id="frukost" checked value=" 100">
+            <label for="frukost">Frukost 100 kr</label><br>
+            Kostnader per dygn
+        </fieldset>
+        <fieldset>
+            <legend>Kampanjkod</legend>
+            Om du har en kampanjkod, skriv in den här! <br>
+            <input class="form-control" type="text" id="kampanjkod">
+        </fieldset>
+        <fieldset>
+            <legend>Totalpriset</legend>
+            <p>Din val ger en kostnad på 0kr.</p>
+            <button class="btn btn-dark">Beräkna din kostnad</button>
+        </fieldset>
+    </div>
+
+    <script defer src="./bokning.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><Canvas></Canvas></title>
+    <link rel="stylesheet" href="./canvas.css">
+</head>
+<body>
+    <div class="kol2">
+        <canvas></canvas>
+        <div>
+            <h1>Flytta mario</h1>
+            <div class="kol3">
+                <br><button id="up">&UpArrow;</button><br>
+                <button id="left">&leftarrow;</button><br><button id="right">&rightarrow;</button>
+                <br><button id="down">&downarrow;</button><br>
+            </div>
+        </div>
+    </div>
+    <script>
+        const eCanvas = document.querySelector("canvas");
+        const eUp = document.querySelector("#up");
+        const eLeft = document.querySelector("#left");
+        const eRight = document.querySelector("#right");
+        const eDown = document.querySelector("#down");
+
+        eCanvas.width = 1200;
+        eCanvas.height = 1000;
+        var ctx = eCanvas.getContext("2d");
+
+        var mario = new Image();
+        var marioX = 100,
+            marioY = 100;
+        mario.src = "./mario.png";
+
+
+        var bowser = new Image();
+        var bowserX = Math.random() * 1000,
+            bowserY = Math.random() * 800;
+        var dx = 3, dy = 2;
+        bowser.src = "./Paper-Bowser-icon.png";
+
+        loopen();
+
+
+
+        function ritaMario() {
+            ctx.drawImage(mario, marioX, marioY);
+        }
+
+        function ritaBowser() {
+            bowserX += dx;
+            bowserY += dy;
+
+            if (bowserY > 760) {
+                dy =  -dy;
+            }
+            if (bowserX > 950) {
+                dx =  -dx;
+            }
+            if (bowserX < 0) {
+                dx =  -dx;
+            }
+            if (bowserY < 0) {
+                dy =  -dy;
+            }
+
+            ctx.drawImage(bowser, bowserX, bowserY);
+        }
+
+        function loopen() {
+            ctx.clearRect(0, 0, 1200, 1000);
+
+            ritaMario();
+
+            ritaBowser();
+
+            requestAnimationFrame(loopen);
+        }
+
+
+        window.addEventListener("keydown", function(e) {
+            switch (e.key) {
+                case "ArrowRight":
+                    marioX += 3;
+                    break;
+                case "ArrowLeft":
+                    marioX -= 3;
+                    break;
+                case "ArrowDown":
+                    marioY += 3;
+                    break;
+                case "ArrowUp":
+                    marioY -= 3;
+                    break;
+            }
+        });
+    </script>
+</body>
+</html>

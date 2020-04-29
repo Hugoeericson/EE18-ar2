@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><Canvas></Canvas></title>
+    <link rel="stylesheet" href="./canvas.css">
+</head>
+<body>
+    <div class="kol2">
+        <canvas></canvas>
+        <div>
+            <h1>Flytta mario</h1>
+            <div class="kol3">
+                <br><button id="up">&UpArrow;</button><br>
+                <button id="left">&leftarrow;</button><br><button id="right">&rightarrow;</button>
+                <br><button id="down">&downarrow;</button><br>
+            </div>
+        </div>
+    </div>
+    <script>
+        const eCanvas = document.querySelector("canvas");
+        const eUp = document.querySelector("#up");
+        const eLeft = document.querySelector("#left");
+        const eRight = document.querySelector("right");
+        const eDown = document.querySelector("#down");
+
+        eCanvas.width = 1200;
+        eCanvas.height = 1000;
+        var ctx = eCanvas.getContext("2d");
+
+        var mario = new Image();
+        mario.src = "./mario.png";
+
+        loopen();
+
+        var x = 100,
+            y = 100;
+
+        function ritaMario() {
+            ctx.drawImage(mario, x, y);
+        }
+
+        function loopen() {
+            ctx.clearRect(0, 0, 1200, 1000);
+
+            ritaMario();
+
+            requestAnimationFrame(loopen);
+        }
+    
+        eRight.addEventListener("click", function () {
+            x += 3;
+        })
+    </script>
+</body>
+</html>
