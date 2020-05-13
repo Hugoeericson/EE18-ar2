@@ -1,0 +1,96 @@
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+.kontainer {
+    background: #DDD;
+}
+
+
+.balloons img:nth-child(1) {
+    position: absolute;
+    top: 550px;
+    left: 150px;
+    z-index: 1;
+}
+.balloons img:nth-child(2) {
+    position: absolute;
+    top: 1200px;
+    left: 550px;
+    z-index: 1;
+}
+.balloons img:nth-child(3) {
+    position: absolute;
+    top: 1800px;
+    left: 350px;
+    z-index: 1;
+}
+
+.mid-clouds img:nth-child(1) {
+    position: absolute;
+    top: 350px;
+    left: 630px;
+    z-index: 2;
+}
+.mid-clouds img:nth-child(2) {
+    position: absolute;
+    top: 600px;
+    left: 1200px;
+    z-index: 2;
+}
+.mid-clouds img:nth-child(3) {
+    position: absolute;
+    top: 650px;
+    left: -80px;
+    z-index: 2;
+}
+.mid-clouds img:nth-child(4) {
+    position: absolute;
+    top: 1250px;
+    left: 650px;
+    z-index: 2;
+}
+.mid-clouds img:nth-child(5) {
+    position: absolute;
+    top: 1800px;
+    left: 700px;
+    z-index: 2;
+}
+
+.back-clouds img:nth-child(1) {
+    position: absolute;
+    top: 150px;
+    left: 200px;
+    z-index: 0;
+}
+.back-clouds img:nth-child(2) {
+    position: absolute;
+    top: 300px;
+    left: 1000px;
+    z-index: 0;
+}
+.back-clouds img:nth-child(3) {
+    position: absolute;
+    top: 550px;
+    left: -50px;
+    z-index: 0;
+}
+.back-clouds img:nth-child(4) {
+    position: absolute;
+    top: 1050px;
+    left: 250px;
+    z-index: 0;
+}
+.back-clouds img:nth-child(5) {
+    position: absolute;
+    top: 1500px;
+    left: 550px;
+    z-index: 0;
+}

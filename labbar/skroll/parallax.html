@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Parallax effekt</title>
+    <link rel="stylesheet" href="./parallax.css">
+</head>
+<body>
+    <div class="kontainer">
+        <div class="balloons">
+            <img class="scroll" data-rate="-0.5" src="./bilder/balloon.png" alt="balloon">
+            <img class="scroll" data-rate="-2" src="./bilder/balloon3.png" alt="balloon">
+            <img class="scroll" data-rate="-1" src="./bilder/balloon3.png" alt="balloon">
+        </div>
+        <div class="mid-clouds scroll" data-rate="-3">
+            <img src="./bilder/cloud-lg1.png" alt="Large cloud">
+            <img src="./bilder/cloud-lg1.png" alt="Large cloud">
+            <img src="./bilder/cloud-lg1.png" alt="Large cloud">
+            <img src="./bilder/cloud-lg1.png" alt="Large cloud">
+            <img src="./bilder/cloud-lg1.png" alt="Large cloud">
+        </div>
+        <div class="back-clouds scroll" data-rate="-0.5">
+            <img src="./bilder/cloud-sm1.png" alt="Small Cloud">
+            <img src="./bilder/cloud-sm1.png" alt="Small Cloud">
+            <img src="./bilder/cloud-sm1.png" alt="Small Cloud">
+            <img src="./bilder/cloud-sm1.png" alt="Small Cloud">
+            <img src="./bilder/cloud-sm1.png" alt="Small Cloud">
+        </div>
+    </div>
+
+    <script>
+        const eTargets = document.querySelectorAll(".scroll");
+
+        window.addEventListener("scroll", function(e) {
+
+            //console.log(eTarget.style);
+            //var distance = window.pageYOffset * -2;
+
+            //eTarget.style.transform = "translateY(" + distance + "px)";
+
+            eTargets.forEach(function(element) {
+                var rate = element.dataset.rate;
+                var orientation = element.dataset.orientation;
+
+                var distance = window.pageYOffset * rate;
+
+                var distance = window.pageYOffset * rate;
+
+                element.style.transform = "translateY(" + window.pageYOffset * rate + "px)";
+
+            });
+        });
+    </script>
+</body>
+</html>

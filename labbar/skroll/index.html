@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sida">
+        <ul>
+            <li class="scrollElement" data-rate="-1" data-orientation="v">Par</li>
+            <li>al</li>
+            <li class="scrollElement" data-rate="-2" data-orientation="v"> lax</li>
+        </ul>
+        <span class="scrollElement" data-rate="2" data-orientation="h"></span>
+    </div>
+    <div class="sida">
+        <img class="scrollElement" src="./bilder/justin-lane-fzsJesR92jE-unsplash.jpg" alt="Afrika">
+    </div>
+    <script>
+        const eTargets = document.querySelectorAll(".scrollElement");
+
+        window.addEventListener("scroll", function(e) {
+            console.log(window.pageYOffset);
+
+            //console.log(eTarget.style);
+            //var distance = window.pageYOffset * -2;
+
+            //eTarget.style.transform = "translateY(" + distance + "px)";
+
+            eTargets.forEach(function(element) {
+                var rate = element.dataset.rate;
+                var orientation = element.dataset.orientation;
+
+                if (orientation == "v") {
+                    var distance = window.pageYOffset * rate;
+                    element.style.transform = "translateY(" + distance + "px)";
+                } else {
+                    var distance = window.pageYOffset * rate;
+
+                    //element.style.transform = "translateX(" + distance + "px)";
+                    //element.style.transform = "translateY(" + window.pageYOffset + "px)";
+                    element.style.transform = "translate3d(" + distance + "px, " + window.pageYOffset + "px, 0px)";
+                }
+            });
+        });
+    </script>
+</body>
+</html>
