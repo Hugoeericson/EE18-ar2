@@ -1,0 +1,100 @@
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Utseende */
+nav, main, aside, footer {
+    background: #ffe600;
+    border: 2px solid #aa9c1f;
+    padding: 10px;
+    border-radius: 5px;
+}
+nav li {
+    list-style: none;
+    display: inline;
+}
+
+header {
+    grid-area: sidhuvud;
+}
+nav {
+    grid-area: meny;
+}
+main {
+    grid-area: innehall;
+}
+aside {
+    grid-area: sidebar;
+}
+footer {
+    grid-area: sidfot;
+}
+main img {
+    max-width: 100%;
+    border: 20px solid #FFF;
+}
+
+.kontainer {
+    width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 4fr 4fr;
+    gap: 20px;
+    grid-template-areas: 
+    "sidhuvud sidhuvud"
+    "meny meny"
+    "innehall sidebar"
+    "sidfot sidfot"
+    ;
+}
+
+/* 
+https://uxdesign.cc/making-design-more-responsive-with-variable-breakpoints-4ff038337420
+
+@media (max-width: 576px) { ... }
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 768px) { ... }
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 1000px) { ... }
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1200px) { ... }
+*/
+
+/* Om fönstret är mindre än 1000px */
+@media (max-width: 1200px) {
+    .kontainer {
+        width: 100%;
+        grid-template-columns: auto 200px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .kontainer{
+        grid-template-columns: auto;
+        grid-template-areas: 
+        "sidhuvud"
+        "meny"
+        "innehall"
+        "sidebar"
+        "sidfot";
+        ;
+    }
+}
+
+@media (max-width: 576px) {
+    nav li {
+        display: block;
+    }
+ }

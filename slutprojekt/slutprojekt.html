@@ -3,10 +3,31 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
-    <link rel="stylesheet" href="style.css">
+    <title>Miniräknare</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./slutprojekt.css">
 </head>
 <body>
-    
+    <div class="kontainer">
+        <h1>Miniräknare</h1>
+        <div class="kol2a">
+            <label>Tal 1</label><input class="form-control" type="text" id="tal1">
+            <label>Tal 2</label><input class="form-control" type="text" id="tal2">
+        </div>
+        <div class="kol2">
+            <button class="btn btn-outline-success" id="plus">+</button>
+            <button class="btn btn-outline-success" id="minus">-</button>
+            <button class="btn btn-outline-success" id="gånger">*</button>
+            <button class="btn btn-outline-success" id="dividera">/</button>
+            <button class="btn btn-outline-success" id="upphöjt">^</button>
+            <button class="btn btn-outline-success" id="pi">π</button>
+        </div>
+        <div class="kol2b">
+            <input class="form-control alert alert-success" type="text" id="resultat">
+            <button onClick="window.location.reload();" class="alert alert-success">C</button>
+        </div>
+    </div>
+
+    <script defer src="./slutprojekt.js"></script>
 </body>
 </html>

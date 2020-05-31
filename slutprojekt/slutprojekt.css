@@ -1,0 +1,31 @@
+body {
+    background: rgb(126, 126, 126);
+}
+.kontainer {
+    width: 500px;
+    padding: 2em;
+    margin: 3em auto;
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+    border: 5px solid rgb(54, 5, 94);
+    box-shadow: 0 0 16px rgb(134, 33, 218);
+}
+.kol2 {
+    margin: 1em auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+}
+.kol2a {
+    margin: 1em auto;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 1em;
+}
+.kol2b {
+    margin: 1em auto;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 1em;
+}
